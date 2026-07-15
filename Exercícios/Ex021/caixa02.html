@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            /* horizontal - vertical - espalhamento - cor */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.300);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 5px 0px;
+        }
+
+        article > p {
+            padding-left: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+            padding: 5px;
+        }
+
+        aside > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Título do Site</h1>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÕES -->
+        <section>
+            <p>Seção 1</p>
+
+            <!-- ARTIGO -->
+            <article>
+                <p>Artigo 1</p>
+
+                <!-- CONTEÚDO RELATIVO AO ARTIGO -->
+                 <aside>
+                    <p>Conteúdo Relativo ao Artigo 1</p>
+                 </aside>
+            </article>
+        </section>
+        <section>
+            <p>Seção 2</p>
+
+            <!-- ARTIGO -->
+            <article>
+                <p>Artigo 2</p>
+
+                <!-- CONTEÚDO RELATIVO AO ARTIGO -->
+                 <aside>
+                    <p>Conteúdo Relativo ao Artigo 2</p>
+                 </aside>
+            </article>
+        </section>
+        <section>
+            <p>Seção 3</p>
+
+            <!-- ARTIGO -->
+            <article>
+                <p>Artigo 3</p>
+
+                <!-- CONTEÚDO RELATIVO AO ARTIGO -->
+                 <aside>
+                    <p>Conteúdo Relativo ao Artigo 3</p>
+                 </aside>
+            </article>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>
+
