@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <form action="" method="get">
+        <div>
+            <p>Número 1:</p>
+
+            <input type="number" name="num1" id="inum1" required min="0" max="50" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </div>
+        <div>
+            <p>Número 2:</p>
+
+            <input type="number" name="num2" id="inum2" required min="0" max="50" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </div>
+
+        <div>
+            <p>Soma:</p>
+
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <br>
+
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
