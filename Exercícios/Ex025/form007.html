@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <form action="#" method="get">
+        <div>
+            <label for="iselect">Select</label>
+            <select name="select" id="iselect" style="margin-left: 10px">
+                <option value="Abóbora">Abóbora</option>
+                <option value="Geléia">Geléia</option>
+                <option value="Arroz doce">Arroz doce</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="idatalist">Data list</label>
+            <input type="text" name="datalist" id="idatalist" list="iabobora">
+            <datalist name="datalist" id="iabobora" style="margin-left: 10px">
+                <option value="Abóbora">Abóbora</option>
+                <option value="Geléia">Geléia</option>
+                <option value="Arroz doce">Arroz doce</option>
+            </datalist>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="itextarea">Text area</label>
+            <br>
+            <textarea name="textarea" id="itextarea" cols="30" rows="10" style="resize: none" placeholder=":3"></textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
